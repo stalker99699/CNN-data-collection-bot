@@ -17,7 +17,7 @@
 cd CNN-DATA-BOT
 npm install
 cp config.example.json config.json   # поправь host/port/size
-node index.js
+node cnn-data-bot.js
 ```
 
 В консоли сервера выдай боту op: `op CNN_DATA_BOT`. Дальше он сам делает `/gamemode spectator` и `/spectate <ник>`.
@@ -188,7 +188,7 @@ for tick, origin, blocks, entities in rec.frames(step=20):   # каждый 20-�
 
 ```
 CNN-DATA-BOT/
-├── index.js                # бот
+├── cnn-data-bot.js                # бот
 ├── tools/rebuild.py        # сборка кадров из записи
 ├── config.example.json
 ├── package.json
